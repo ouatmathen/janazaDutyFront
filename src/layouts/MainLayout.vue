@@ -1,9 +1,10 @@
+
 <template>
-  <div class="flex h-screen bg-gray-100">
+  <div class="main-layout">
     <Sidebar />
-    <div class="flex flex-col flex-1">
+    <div class="main-content">
       <HeaderBar />
-      <main class="p-4 overflow-y-auto">
+      <main>
         <router-view />
       </main>
     </div>
@@ -14,3 +15,22 @@
 import Sidebar from '../components/Sidebar.vue'
 import HeaderBar from '../components/HeaderBar.vue'
 </script>
+
+<style scoped>
+.main-layout {
+  display: flex;
+  height: 100vh;
+  background: #f7fafc;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+</style>

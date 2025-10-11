@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center justify-center h-screen bg-gray-100">
-    <form @submit.prevent="handleLogin" class="bg-white p-6 rounded shadow w-96">
+  <div class="login-center">
+    <form @submit.prevent="handleLogin" class="login-form">
       <h2 class="text-xl font-bold mb-4">Connexion</h2>
       <input v-model="email" type="email" placeholder="Email" class="w-full mb-3 border rounded px-3 py-2" />
       <input v-model="password" type="password" placeholder="Mot de passe" class="w-full mb-3 border rounded px-3 py-2" />
@@ -31,3 +31,20 @@ const handleLogin = async () => {
   }
 };
 </script>
+
+<style scoped>
+.login-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+.login-form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  width: 24rem;
+}
+</style>

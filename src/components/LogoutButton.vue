@@ -1,6 +1,7 @@
 <template>
-  <button @click="logout">Déconnexion</button>
+  <button class="logout-button" @click="logout">Déconnexion</button>
 </template>
+
 
 <script setup>
 import { useRouter } from "vue-router";
@@ -13,4 +14,7 @@ const logout = () => {
   auth.logout();
   router.push("/login");
 };
+
 </script>
+
+<style src="./LogoutButton.css" scoped></style>

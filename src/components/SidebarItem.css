@@ -1,0 +1,35 @@
+/* SidebarItem Component Styles */
+.sidebar-item {
+  /* display: flex; */
+  /* align-items: center; */
+  border-radius: 6px;
+  /* margin-bottom: 0.5rem; */
+  cursor: pointer;
+  transition: background 0.2s;
+  background: #22313f;
+  height: 5rem;
+}
+.sidebar-item:hover {
+  background: #22313f;
+} 
+
+.sidebar-icon {
+  width: 1.5rem;
+  height: 2rem;
+  transition: width 0.2s, height 0.2s;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+/* .sidebar-icon-expanded {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.sidebar-icon-collapsed {
+  width: 1.5rem;
+  height: 1.5rem;
+} */
+
+.sidebar-label {
+  display: inline-block;
+  vertical-align: middle;
+}

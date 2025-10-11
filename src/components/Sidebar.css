@@ -1,0 +1,43 @@
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* Sidebar Component Styles */
+
+.sidebar {
+  background: #435e79;
+  color: #fff;
+  min-height: 100vh;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+  transition: width 0.2s;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sidebar-expanded {
+  width: 170px;
+  padding: 2rem 0.5rem;
+}
+
+.sidebar-collapsed {
+  width: 20px;
+  padding: 2rem 0.5rem;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  align-self: self-end;
+  transition: color 0.2s;
+  padding: 0rem 0rem;
+}
+.sidebar-toggle:hover {
+  color: #e67e22;
+  padding: 0rem 0rem;
+}
