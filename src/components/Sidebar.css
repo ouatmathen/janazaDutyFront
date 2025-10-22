@@ -22,15 +22,30 @@
 }
 
 .sidebar-collapsed {
-  width: 20px;
+  /* keep enough room for the icon and small padding */
+  width: 60px;
   padding: 2rem 0.5rem;
 }
 
+/* When collapsed, center items and make icons slightly smaller and remove label spacing */
+.sidebar-collapsed .sidebar-item {
+  justify-content: center;
+}
+.sidebar-collapsed .sidebar-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0;
+}
+.sidebar-collapsed .sidebar-label {
+  display: none;
+}
+
 .sidebar-toggle {
+  border-radius: 3px;
   background: none;
   border: none;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
   margin-bottom: 1rem;
   align-self: self-end;
@@ -38,6 +53,7 @@
   padding: 0rem 0rem;
 }
 .sidebar-toggle:hover {
-  color: #e67e22;
+  background: #fff;
+  color: #435e79; /*#e67e22;*/
   padding: 0rem 0rem;
 }

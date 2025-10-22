@@ -21,7 +21,7 @@ import { HomeIcon, FolderIcon, DocumentIcon, PencilIcon, Cog6ToothIcon, UsersIco
 
 const collapsed = ref(false);
 const menu = [
-  { name: 'Dashboard', label: 'Dashboard', to: '/', icon: HomeIcon },
+  { name: 'Dashboard', label: 'Tableau de bord', to: '/', icon: HomeIcon },
   { name: 'Dossiers', label: 'Dossiers', to: '/dossiers', icon: FolderIcon },
   { name: 'DossierCreate', label: 'Nouveau Dossier', to: '/dossiers/nouveau', icon: PencilIcon },
   { name: 'Documents', label: 'Documents', to: '/documents', icon: DocumentIcon },

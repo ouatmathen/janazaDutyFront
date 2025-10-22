@@ -1,9 +1,9 @@
 
 <template>
+  <HeaderBar />
   <div class="main-layout">
     <Sidebar />
     <div class="main-content">
-      <HeaderBar />
       <main>
         <router-view />
       </main>

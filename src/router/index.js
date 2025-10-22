@@ -9,6 +9,7 @@ import Documents from '../views/Documents.vue'
 import Signatures from '../views/Signatures.vue'
 import Users from '../views/Users.vue'
 import Settings from '../views/Settings.vue'
+import DossierDetail from '../views/DossierDetail.vue'
 import MainLayout from '../layouts/MainLayout.vue'
 
 const routes = [
@@ -20,6 +21,7 @@ const routes = [
     children: [
       { path: '', name: 'Dashboard', component: Dashboard, meta: { requiresAuth: true } },
       { path: 'dossiers', name: 'Dossiers', component: Dossiers, meta: { requiresAuth: true } },
+  { path: 'dossiers/:id', name: 'DossierDetail', component: DossierDetail, meta: { requiresAuth: true } },
       { path: 'dossiers/nouveau', name: 'DossierCreate', component: DossierCreate, meta: { requiresAuth: true } },
       { path: 'documents', name: 'Documents', component: Documents, meta: { requiresAuth: true } },
       { path: 'signatures', name: 'Signatures', component: Signatures, meta: { requiresAuth: true } },
